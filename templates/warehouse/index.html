@@ -1,0 +1,16 @@
+{% extends "primary_layout.html" %} 
+{% block content %}
+
+<div class="grid grid-cols-4 gap-4 p-4">
+    
+    {% for i in range(4) %}
+        {% for j in range(4) %}
+            <div class="border-2 p-4 border-white rounded-md text-center">
+                <p>Unit {{ j + (i * 4) }}</p>
+            </div>
+        {% endfor %} 
+    {% endfor %}
+
+</div>
+
+{% endblock %}
